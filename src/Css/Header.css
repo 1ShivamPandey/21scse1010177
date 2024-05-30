@@ -1,0 +1,92 @@
+.header {
+    top: 0;
+    background-color: black;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    backdrop-filter: blur(0.8px);
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 1000; 
+}
+
+.logo-size {
+    height: 120px;
+    margin-top: 10px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.School-Details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+.link-style {
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 100px;
+        z-index: 1000; 
+    }
+
+    .logo-size {
+        height: 80px;
+        margin-top: 10px;
+    }
+    .School-Details {
+        display: none;
+    }
+
+    .nav-bar {
+        display: none;
+        flex-direction: column;
+        /* gap: 10px; */
+        background-color: white;
+        border-radius: 10px;
+        position: fixed;
+        top: 100px;
+        max-width: 300px;
+        left: 60px;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .link-style {
+        color: black;
+        text-align: center;
+        font-weight: 600;
+        margin-left: 50px;
+    }
+
+    .nav-bar.open {
+        display: flex;
+        margin-right: 100px;
+    }
+
+    .menu-icon {
+        display: block;
+        /* background-color: blue; */
+        margin-top: 25px;
+        /* position: fixed; */
+    }
+
+}

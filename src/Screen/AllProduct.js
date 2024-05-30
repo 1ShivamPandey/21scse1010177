@@ -18,9 +18,11 @@ const AllProduct = () => {
       {error && <p>{error}</p>}
       <ul>
         {productData.map((item, index) => (
-          <li key={index}>
-            Product Name: {item.productName}, Price: ${item.price}
+          <li style={{color:'blue'}} key={index}>
+            Product Name: {item.productName}, Price: ${item.price},
           </li>
+
+       
         ))}
       </ul>
     </div>
